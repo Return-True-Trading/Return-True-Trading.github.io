@@ -6,13 +6,14 @@
 </head>
 <style type="text/css">
     html { 
-        background: url(background.jpg) no-repeat center center fixed; 
+        /*background: url(background.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
-        background-size: cover;
-        font-family: Helvetica;
+        background-size: cover;*/
+        font-family: Menlo;
         color: white;
+        background-color: rgb(40, 41, 35);
     }
     .vertical-center {
       position: fixed;
@@ -21,14 +22,31 @@
       /* bring your own prefixes */
       transform: translate(-50%, -50%);
       text-align: center;
+      width: 13em;
+    }
+    .line_number {
+      color:rgb(144, 145, 139);
+    }
+    .comment {
+      color: rgb(112, 108, 90);
+    }
+    body {
+      font-size: 2.5em;
     }
 </style>
 <body>
-    <div style="position: relative; height: 100%;">
+    <div style="position: relative;">
         <div class="vertical-center">
-            <h1>Return True Trading</h1>
-            <h3>Algorithmic trading</h3>    
-            <h3>For inquiries, email us <a style="color: white" href="mailto:elliotlbernstein@gmail.com">here</a></h3>    
+            <div style="text-align: left;">
+              <span class="line_number">1 </span><span> &nbsp; <span style="color:red">return</span> <span style="color:rgb(156,116,232);">true</span>;</span>
+              <br>
+              <span class="line_number">2 </span><span class="comment"> &nbsp; //trading;</span>
+              <br>
+              <span class="line_number">3 </span><span></span>
+              <br>
+              <span class="line_number">4 </span><span class="comment"> &nbsp; // For inquiries,<br>
+                &nbsp; &nbsp; email us <a class="comment" href="mailto:elliotlbernstein@gmail.com">here</a></span>
+            </div>
         </div>
     </div>
 </body>
